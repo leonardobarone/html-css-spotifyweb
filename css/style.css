@@ -27,6 +27,7 @@ a {
 aside {
     width: 295px;
     background-color: #000000;
+    overflow-y: auto;
 }
 
 .logo-aside {
@@ -76,7 +77,7 @@ aside {
 }
 
 .add-playlist {
-    margin: 10px 0px;
+    margin: 10px 0px 15px 0px;
 }
 
 .symbol-add {
@@ -93,14 +94,13 @@ aside {
     display: inline-block;
 }
 
-.list-playlist ul {
-    overflow-y: hidden;
-}
-
 .list-playlist li {
     list-style: none;
-    color: #a3a3a3;
     margin: 10px 0px;
+}
+
+.list-playlist li a {
+    color: #a3a3a3;
 }
 
 /* main */
