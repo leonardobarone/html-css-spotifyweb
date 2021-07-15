@@ -16,7 +16,7 @@ body {
 }
 
 .h-row {
-    height: calc(100vh - 100px);
+    height: calc(100% - 100px);
 }
 
 a {
@@ -78,6 +78,9 @@ aside {
 
 .add-playlist a {
     color: #a3a3a3;
+}
+
+.add-playlist {
     margin: 10px 0px;
 }
 
@@ -98,19 +101,21 @@ aside {
 .list-playlist li {
     list-style: none;
     color: #a3a3a3;
+    margin: 10px 0px;
 }
 
 /* main */
 main {
     width: 100%;
+    height: calc(100vh - 100px);
     overflow-y: auto;
 }
 
 /* header */
 header {
     height: 50px;
-    background-color: rgba(20, 25, 34, 0.5);
-    color: black;
+    background-color: green;
+    color: white;
 }
 
 /* main main */
