@@ -15,13 +15,16 @@ body {
     display: flex;
 }
 
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
 .container {
     height: calc(100vh - 100px);
 }
 
 .column {
     flex-direction: column;
-    border: 1px solid white;
 }
 
 .position-relative {
@@ -47,8 +50,16 @@ aside {
     color: #a3a3a3;
 }
 
+aside .bottom {
+    padding: 15px;
+}
+
 .logo-aside img {
     width: 130px;
+}
+
+.logo-aside {
+    padding: 15px;
 }
 
 .nav-aside img {
@@ -58,13 +69,14 @@ aside {
 
 .nav-aside {
     list-style: none;
-    border: 1px solid white;
     width: 100%;
 }
 
 .nav-aside a {
     color: #a3a3a3;
     display: block;
+    padding: 2px 15px;
+    font-size: 15px;
 }
 
 .nav-aside a.active {
@@ -81,12 +93,21 @@ aside {
 }
 
 .list-playlist {
-    height: 30vh;
+    height: 20vh;
     overflow-y: auto;
+    font-size: 15px;
+}
+
+.playlist-aside {
+    padding: 15px;
 }
 
 .add-playlist a{
     color: #a3a3a3;
+}
+
+.add-playlist {
+    margin: 8px 0px;
 }
 
 .symbol-add {
@@ -94,18 +115,26 @@ aside {
     width: 30px;
     height: 30px;
     line-height: 30px;
+    font-size: 30px;
     background-color: #a3a3a3;
     text-align: center;
     color: #000000;
+    vertical-align: middle;
 }
 
 .name-add {
     display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
 }
 
 .list-playlist li {
     list-style: none;
     margin-top: 8px;
+}
+
+.playlist-aside h4 {
+    color: white;
 }
 
 .list-playlist li a {
@@ -120,19 +149,30 @@ aside {
 .profile img {
     vertical-align: middle;
     width: 20px;
+    border-radius: 50%;
     background-color: gray;
 }
 
+.download {
+    padding: 0px 0px 5px 5px;
+    border-bottom: 1px solid #a3a3a3;
+}
+
 .name-download {
+    font-size: 15px;
     display: inline-block;
     vertical-align: middle;
     color: #a3a3a3;
+}
+
+.profile {
+    padding: 5px 0px 0px 5px;
 }
 
 .profile h4 {
     vertical-align: middle;
     display: inline-block;
-    color: #a3a3a3;
+    color: white;
 }
 
 /* main */
