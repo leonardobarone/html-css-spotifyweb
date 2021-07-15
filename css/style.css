@@ -15,6 +15,10 @@ body {
     display: flex;
 }
 
+.h-row {
+    height: calc(100vh - 100px);
+}
+
 a {
     text-decoration: none;
 }
@@ -23,7 +27,6 @@ a {
 aside {
     width: 295px;
     background-color: #000000;
-    height: calc(100vh - 100px);
 }
 
 .nav-aside {
@@ -31,7 +34,6 @@ aside {
 }
 
 .logo-aside {
-    /* border: 1px solid white; */
     padding: 23px;
 }
 
@@ -67,7 +69,6 @@ aside {
 
 .playlist-aside h4 {
     color: #a3a3a3;
-    margin-bottom: 10px;
 }
 
 .playlist-aside {
@@ -77,6 +78,7 @@ aside {
 
 .add-playlist a {
     color: #a3a3a3;
+    margin: 10px 0px;
 }
 
 .symbol-add {
@@ -96,20 +98,24 @@ aside {
 .list-playlist li {
     list-style: none;
     color: #a3a3a3;
-
 }
 
 /* main */
 main {
-    background-color: green;
     width: 100%;
+    overflow-y: auto;
 }
 
 /* header */
 header {
     height: 50px;
-    background-color: #000000;
-    opacity: 0.5;
+    background-color: rgba(20, 25, 34, 0.5);
+    color: black;
+}
+
+/* main main */
+.main {
+    background-color: #141922;
 }
 
 /* footer */
