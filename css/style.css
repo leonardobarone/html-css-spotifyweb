@@ -15,8 +15,22 @@ body {
     display: flex;
 }
 
-.h-row {
+.container {
     height: calc(100vh - 100px);
+}
+
+.column {
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
 }
 
 a {
@@ -25,59 +39,50 @@ a {
 
 /* aside */
 aside {
-    width: 295px;
+    width: 300px;
     background-color: #000000;
-    overflow-y: auto;
-}
-
-.logo-aside {
-    padding: 23px;
+    color: #a3a3a3;
 }
 
 .logo-aside img {
     width: 130px;
 }
 
-.item-nav-aside img {
-    height: 23px;
+.nav-aside img {
+    height: 25px;
     vertical-align: middle;
 }
 
-.item-nav-aside a {
-    color: #a3a3a3;
-    display: block;
-    padding: 5px 20px;
+.nav-aside {
+    list-style: none;
+    border: 1px solid white;
+    width: 100%;
 }
 
-.item-nav-aside a.active {
+.nav-aside a {
+    color: #a3a3a3;
+    display: block;
+}
+
+.nav-aside a.active {
     border-left: 3px solid #adff2f;
 }
 
-.item-nav-aside a.idle {
+.nav-aside a.idle {
     border-left: 3px solid #000000;
 }
 
 .name-nav-aside {
     display: inline-block;
     vertical-align: middle;
-    font-size: 14px;
-    margin-left: 10px;
-}
-
-.playlist-aside h4 {
-    color: #a3a3a3;
 }
 
 .playlist-aside {
-    padding: 20px;
+    overflow-y: auto;
 }
 
-.add-playlist a {
+.add-playlist a{
     color: #a3a3a3;
-}
-
-.add-playlist {
-    margin: 10px 0px 15px 0px;
 }
 
 .symbol-add {
@@ -96,16 +101,38 @@ aside {
 
 .list-playlist li {
     list-style: none;
-    margin: 10px 0px;
 }
 
 .list-playlist li a {
     color: #a3a3a3;
 }
 
+.download img {
+    width: 15px;
+    vertical-align: middle;
+}
+
+.profile img {
+    vertical-align: middle;
+    width: 20px;
+    background-color: gray;
+}
+
+.name-download {
+    display: inline-block;
+    vertical-align: middle;
+    color: #a3a3a3;
+}
+
+.profile h4 {
+    vertical-align: middle;
+    display: inline-block;
+    color: #a3a3a3;
+}
+
 /* main */
 main {
-    width: calc(100% - 295px);
+    width: calc(100% - 300px);
     overflow-y: auto;
 }
 
@@ -129,7 +156,7 @@ header {
     opacity: 0.8;
     position: fixed;
     right: 0px;
-    width: calc(100% - 295px);
+    width: calc(100% - 300px);
     align-items: center;
     justify-content: flex-end;
 }
