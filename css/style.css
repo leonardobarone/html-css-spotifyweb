@@ -16,7 +16,7 @@ body {
 }
 
 .h-row {
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
 }
 
 a {
@@ -27,10 +27,6 @@ a {
 aside {
     width: 295px;
     background-color: #000000;
-}
-
-.nav-aside {
-    border: 1px solid white;
 }
 
 .logo-aside {
@@ -63,7 +59,7 @@ aside {
 .name-nav-aside {
     display: inline-block;
     vertical-align: middle;
-    font-size: 15px;
+    font-size: 14px;
     margin-left: 10px;
 }
 
@@ -72,7 +68,6 @@ aside {
 }
 
 .playlist-aside {
-    border: 1px solid white;
     padding: 20px;
 }
 
@@ -98,6 +93,10 @@ aside {
     display: inline-block;
 }
 
+.list-playlist ul {
+    overflow-y: hidden;
+}
+
 .list-playlist li {
     list-style: none;
     color: #a3a3a3;
@@ -106,27 +105,56 @@ aside {
 
 /* main */
 main {
-    width: 100%;
-    height: calc(100vh - 100px);
+    width: calc(100% - 295px);
     overflow-y: auto;
+}
+
+.nav-main {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-main li {
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px;
 }
 
 /* header */
 header {
-    height: 50px;
-    background-color: green;
+    height: 60px;
+    background-color: #141922;
+    opacity: 0.8;
+    position: fixed;
+    right: 0px;
+    width: calc(100% - 295px);
+    align-items: center;
+    justify-content: flex-end;
+}
+
+a.btn{
+    font-size: 12px;
     color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+    margin-right: 30px;
+    border-radius: 15px;
+    background: #000000;
 }
 
 /* main main */
 .main {
     background-color: #141922;
+    padding: 75px 15px 15px 15px;
+    color: gray;
 }
 
 /* footer */
 footer {
     height: 100px;
-    background-color: #282828;
+    background-color: #a3a3a3;
     position: fixed;
     width: 100%;
     bottom: 0px;
