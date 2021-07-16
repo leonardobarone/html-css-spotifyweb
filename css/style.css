@@ -265,6 +265,16 @@ main {
     border-radius: 50%;
 }
 
+.subtitle {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.title {
+    margin-top: 5px;
+    color: white;
+}
+
 /* footer */
 footer {
     height: 100px;
@@ -292,4 +302,47 @@ footer {
     height: 5px;
     background-color: #a3a3a3;
     border: 50px;
+}
+
+.brano img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.brano {
+    margin-right: 20px;
+}
+
+.name-brano h4{
+    color: white;
+}
+
+.artist {
+    font-size: 12px;
+}
+
+.aggiungi-preferiti i {
+    margin-right: 5px;
+}
+
+.buttons {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.buttons i {
+    margin: 0px 5px;
+    vertical-align: middle;
+}
+
+.buttons i:first-child,
+.buttons i:last-child {
+    font-size: 15px;
+}
+
+.buttons i:nth-child(3) {
+    font-size: 30px;
 }
