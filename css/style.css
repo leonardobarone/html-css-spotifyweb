@@ -288,9 +288,15 @@ footer {
 
 .bar {
     width: 300px;
-    height: 5px;
+    height: 3px;
     background-color: #a3a3a3;
     border-radius: 50px;
+    margin: 0px 10px;
+}
+
+.time {
+    font-size: 13px;
+    color: white;
 }
 
 .buttons {
@@ -298,10 +304,10 @@ footer {
 }
 
 .music {
-    width: 50px;
-    height: 5px;
+    width: 100px;
+    height: 3px;
     background-color: #a3a3a3;
-    border: 50px;
+    border-radius: 50px;
 }
 
 .brano img {
@@ -345,4 +351,13 @@ footer {
 
 .buttons i:nth-child(3) {
     font-size: 30px;
+}
+
+.right-footer i,
+.right-footer .progress-music {
+    margin-left: 10px;
+}
+
+.right-footer i  {
+    font-size: 14px;
 }
