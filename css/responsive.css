@@ -5,3 +5,11 @@
     }
 
 }
+
+@media screen and (max-width: 700px) {
+
+    .col-s-6 {
+        flex-basis: calc((100% / 12) * 6);
+    }
+
+}
