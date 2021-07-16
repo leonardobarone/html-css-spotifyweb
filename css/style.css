@@ -275,3 +275,21 @@ footer {
     padding: 0px 15px;
     color: #a3a3a3;
 }
+
+.bar {
+    width: 300px;
+    height: 5px;
+    background-color: #a3a3a3;
+    border-radius: 50px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.music {
+    width: 50px;
+    height: 5px;
+    background-color: #a3a3a3;
+    border: 50px;
+}
