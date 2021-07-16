@@ -15,6 +15,17 @@ body {
     display: flex;
 }
 
+.col-2 {
+    flex-basis: calc((100% / 12) * 2);
+    padding-top: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.col-12 {
+    flex-basis: 100%;
+}
+
 .flex-wrap-wrap {
     flex-wrap: wrap;
 }
@@ -45,7 +56,7 @@ a {
 
 /* aside */
 aside {
-    width: 300px;
+    width: 250px;
     background-color: #000000;
     color: #a3a3a3;
 }
@@ -175,10 +186,39 @@ aside .bottom {
     color: white;
 }
 
+/* header */
+header {
+    height: 60px;
+    background-color: #141922;
+    opacity: 0.8;
+    position: fixed;
+    right: 0px;
+    width: calc(100% - 250px);
+    align-items: center;
+    justify-content: flex-end;
+}
+
+a.upgrade{
+    font-size: 12px;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+    margin-right: 30px;
+    border-radius: 15px;
+    background: #000000;
+}
+
 /* main */
 main {
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     overflow-y: auto;
+}
+
+/* primary */
+.primary {
+    background-color: #141922;
+    padding: 75px 15px 15px 15px;
+    color: #a3a3a3;
 }
 
 .nav-main {
@@ -207,43 +247,31 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -25%);
-
 }
 
-/* header */
-header {
-    height: 60px;
-    background-color: #141922;
-    opacity: 0.8;
-    position: fixed;
-    right: 0px;
-    width: calc(100% - 300px);
-    align-items: center;
-    justify-content: flex-end;
+.recenti,
+.consigliati,
+.popolari {
+    margin-bottom: 25px;
 }
 
-a.upgrade{
-    font-size: 12px;
-    color: white;
-    border: 1px solid white;
-    padding: 8px 25px;
-    margin-right: 30px;
-    border-radius: 15px;
-    background: #000000;
+.recenti img,
+.consigliati img,
+.popolari img {
+    width: 100%;
 }
 
-/* primary */
-.primary {
-    background-color: #141922;
-    padding: 75px 15px 15px 15px;
-    color: #a3a3a3;
+.popolari img {
+    border-radius: 50%;
 }
 
 /* footer */
 footer {
     height: 100px;
-    background-color: #a3a3a3;
+    background-color: #282828;
     position: fixed;
     width: 100%;
     bottom: 0px;
+    padding: 0px 15px;
+    color: #a3a3a3;
 }
