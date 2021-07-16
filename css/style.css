@@ -223,7 +223,9 @@ main {
 
 .nav-main {
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .nav-main li {
@@ -287,7 +289,7 @@ footer {
 }
 
 .bar {
-    width: 300px;
+    width: 275px;
     height: 3px;
     background-color: #a3a3a3;
     border-radius: 50px;
