@@ -65,12 +65,16 @@ aside .bottom {
     padding: 15px;
 }
 
-.logo-aside img {
-    width: 130px;
+.logo-smartphone {
+    display: none;
 }
 
 .logo-aside {
     padding: 15px;
+}
+
+.logo-desktop {
+    width: 130px;
 }
 
 .nav-aside img {
@@ -289,7 +293,7 @@ footer {
 }
 
 .bar {
-    width: 275px;
+    width: 250px;
     height: 3px;
     background-color: #a3a3a3;
     border-radius: 50px;

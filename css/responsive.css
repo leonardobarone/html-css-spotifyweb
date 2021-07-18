@@ -12,4 +12,107 @@
         flex-basis: calc((100% / 12) * 6);
     }
 
+    .bar {
+        width: 150px;
+    }
+
+    .music {
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    aside {
+        width: 80px;
+        align-items: center;
+    }
+
+    header {
+        width: calc(100% - 80px);
+    }
+
+    main {
+        width: calc(100% - 80px);
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-smartphone {
+        display: block;
+        width: 50px;
+        margin: 10px 0px;
+    }
+
+    .logo-aside {
+        padding: 0px;
+    }
+
+    .playlist-aside {
+        display: none;
+    }
+
+    
+
+    aside .bottom {
+        padding: 0px;
+    }
+
+    .download {
+        padding: 0px;
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .download img {
+        vertical-align: baseline;
+        width: 30px;
+        
+    }
+
+    .name-download {
+        display: none;
+    }
+
+    .profile {
+        padding: 0px;
+    }
+
+    .profile img {
+        width: 40px;
+        vertical-align: baseline;
+        margin: 10px 0px;
+    }
+
+    .profile h4 {
+        display: none;
+    }
+
+    .name-nav-aside {
+        display: none;
+    }
+
+    .nav-aside a img {
+        vertical-align: baseline;
+        height: 40px;
+    }
+
+    .nav-aside a {
+        padding: 0px;
+        margin: 5px 0px;
+    }
+
+    .nav-aside a.active,
+    .nav-aside a.idle {
+        border-left: none;
+    }
+
+    .nav-aside {
+        text-align: center;
+    }
+
+  
 }
