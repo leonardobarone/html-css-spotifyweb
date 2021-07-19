@@ -95,6 +95,10 @@ aside .bottom {
     font-size: 15px;
 }
 
+.nav-aside a:hover {
+    color: white;
+}
+
 .nav-aside a.active {
     border-left: 3px solid #adff2f;
 }
@@ -122,6 +126,7 @@ aside .bottom {
     color: #a3a3a3;
 }
 
+
 .add-playlist {
     margin: 8px 0px;
 }
@@ -136,6 +141,13 @@ aside .bottom {
     text-align: center;
     color: #000000;
     vertical-align: middle;
+}
+.add-playlist a:hover{
+    color: white;
+}
+
+.add-playlist a:hover .symbol-add {
+    background-color: white;
 }
 
 .name-add {
@@ -244,6 +256,15 @@ main {
     color: #a3a3a3;
 }
 
+.nav-main li a:active {
+    color: white;
+}
+
+.nav-main li a:hover,
+.nav-main li a:focus {
+    color: white;
+}
+
 .nav-main a.active::after{
     content: "___";
     font-weight: bold;
@@ -255,6 +276,11 @@ main {
     left: 50%;
     transform: translate(-50%, -25%);
 }
+
+a.upgrade:hover {
+   transform: scale(1.1);
+}
+
 
 .recenti,
 .consigliati,
