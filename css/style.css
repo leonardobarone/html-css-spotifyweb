@@ -142,8 +142,9 @@ aside .bottom {
     color: #000000;
     vertical-align: middle;
 }
-.add-playlist a:hover{
+.add-playlist a .name-add:hover{
     color: white;
+    text-decoration: underline;
 }
 
 .add-playlist a:hover .symbol-add {
@@ -301,6 +302,7 @@ a.upgrade:hover {
 }
 
 
+
 .overlay {
     visibility: hidden;
     cursor: pointer;
@@ -354,10 +356,35 @@ footer {
 
 .bar {
     width: 250px;
-    height: 3px;
+    height: 7px;
     background-color: #a3a3a3;
     border-radius: 50px;
+    overflow: hidden;
     margin: 0px 10px;
+}
+
+.bar-time {
+    position: relative;
+    background-color: #adff2f;
+    width: 50px;
+    height: 7px;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.bar-time::after {
+    position: absolute;
+    right: 0px;
+    content: "";
+    display: block;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.bar:hover .bar-time {
+    width: 70%;
 }
 
 .time {
