@@ -359,7 +359,7 @@ footer {
     height: 7px;
     background-color: #a3a3a3;
     border-radius: 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0px 10px;
 }
 
@@ -368,17 +368,18 @@ footer {
     background-color: #adff2f;
     width: 50px;
     height: 7px;
-    overflow: hidden;
     transition: 2s;
+    border-radius: 50px;
 }
 
-.bar-time::after {
+.bar:hover .bar-time::after {
     position: absolute;
     right: 0px;
+    top: -2px;
     content: "";
     display: block;
-    height: 7px;
-    width: 7px;
+    height: 11px;
+    width: 11px;
     border-radius: 50%;
     background-color: white;
 }
